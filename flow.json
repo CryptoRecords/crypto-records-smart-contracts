@@ -1,0 +1,23 @@
+{
+	"host": "access.testnet.nodes.onflow.org:9000",
+	"accounts": {
+		"service": {
+			"address": "f8d6e0586b0a20c7",
+			"privateKey": "9c74d80f485d90d436ccec438693944b2d87befad56784c4e1c405bb1c91a1b3",
+			"sigAlgorithm": "ECDSA_P256",
+			"hashAlgorithm": "SHA3_256",
+			"keyType": "hex",
+			"keyIndex": 0,
+			"keyContext": {
+				"privateKey": "9c74d80f485d90d436ccec438693944b2d87befad56784c4e1c405bb1c91a1b3"
+			},
+			"keys": ""
+		},
+		"testnet": {
+			"address": "${FLOW_ADDRESS}",
+			"privateKey": "${FLOW_PRIVATE_KEY}",
+			"sigAlgorithm": "ECDSA_P256",
+			"hashAlgorithm": "SHA3_256"
+		}
+	}
+}
