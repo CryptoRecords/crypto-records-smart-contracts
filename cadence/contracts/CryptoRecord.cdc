@@ -1,4 +1,4 @@
-import NonFungibleToken from "./NonFungibleToken.cdc";
+import NonFungibleToken from 0xNonFungibleToken
 // import NonFungibleToken from 0x631e88ae7f1d7c20;
 
 pub contract CryptoRecord: NonFungibleToken {
