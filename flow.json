@@ -5,7 +5,10 @@
 			"serviceAccount": "emulator-account"
 		}
 	},
-	"contracts": {},
+	"contracts": {
+		"CryptoRecord": "./contracts/CryptoRecord.cdc",
+		"NonFungibleToken": "./contracts/NonFungibleToken"
+	},
 	"networks": {
 		"emulator": "127.0.0.1:3569",
 		"mainnet": "access.mainnet.nodes.onflow.org:9000",
