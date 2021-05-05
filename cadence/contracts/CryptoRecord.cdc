@@ -1,5 +1,4 @@
-import NonFungibleToken from 0xNonFungibleToken
-// import NonFungibleToken from 0x631e88ae7f1d7c20;
+import NonFungibleToken from 0xNonFungibleToken;
 
 pub contract CryptoRecord: NonFungibleToken {
 
@@ -16,7 +15,8 @@ pub contract CryptoRecord: NonFungibleToken {
         pub let coverArtUrl: String;
         pub let discArtUrl: String;
         pub let description: String
-        pub let numMinted: UInt64;
+        pub let mintSize: UInt64;
+        pub let mintNumber: UInt64;
         pub let artistEquity: UFix64;
         pub let trackList: [AnyStruct{ITrack}];
         pub let royaltySplits: [AnyStruct{IRoyaltySplit}];
@@ -51,7 +51,8 @@ pub contract CryptoRecord: NonFungibleToken {
         pub let coverArtUrl: String;
         pub let discArtUrl: String;
         pub let description: String
-        pub let numMinted: UInt64;
+        pub let mintSize: UInt64;
+        pub let mintNumber: UInt64;
         pub let artistEquity: UFix64;
         pub let trackList: [AnyStruct{ITrack}];
         pub let royaltySplits: [AnyStruct{IRoyaltySplit}];
@@ -65,7 +66,8 @@ pub contract CryptoRecord: NonFungibleToken {
             coverArtUrl: String, 
             discArtUrl: String,
             description: String,
-            numMinted: UInt64,
+            mintSize: UInt64,
+            mintNumber: UInt64,
             artistEquity: UFix64,
             trackList: [AnyStruct{ITrack}],
             royaltySplits: [AnyStruct{IRoyaltySplit}]
@@ -77,7 +79,8 @@ pub contract CryptoRecord: NonFungibleToken {
             self.coverArtUrl = coverArtUrl;
             self.discArtUrl = discArtUrl;
             self.description = description;
-            self.numMinted = numMinted;
+            self.mintSize = mintSize;
+            self.mintNumber = mintNumber;
             self.artistEquity = artistEquity;
             self.trackList = trackList;
             self.royaltySplits = royaltySplits;
@@ -155,7 +158,8 @@ pub contract CryptoRecord: NonFungibleToken {
             coverArtUrl: String, 
             discArtUrl: String,
             description: String,
-            numMinted: UInt64,
+            mintSize: UInt64,
+            mintNumber: UInt64,
             artistEquity: UFix64,
             trackList: [AnyStruct{ITrack}],
             royaltySplits: [AnyStruct{IRoyaltySplit}]
@@ -170,7 +174,8 @@ pub contract CryptoRecord: NonFungibleToken {
                 coverArtUrl: coverArtUrl, 
                 discArtUrl: discArtUrl,
                 description: description,
-                numMinted: numMinted,
+                mintSize: mintSize,
+                mintNumber: mintNumber,
                 artistEquity: artistEquity,
                 trackList: trackList,
                 royaltySplits: royaltySplits
