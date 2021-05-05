@@ -10,6 +10,6 @@
   },
   "scripts": {
     "start-emulator": "flow emulator -v",
-    "test": "jest --watch"
+    "test": "jest"
   }
 }
