@@ -6,8 +6,13 @@
 		}
 	},
 	"contracts": {
-		"CryptoRecord": "./contracts/CryptoRecord.cdc",
-		"NonFungibleToken": "./contracts/NonFungibleToken"
+		"CryptoRecord": "./cadence/contracts/CryptoRecord.cdc",
+		"NonFungibleToken": {
+			"source": "./cadence/contracts/NonFungibleToken",
+			"aliases": {
+				"testnet": "0x631e88ae7f1d7c20"
+			}
+		}
 	},
 	"networks": {
 		"emulator": "127.0.0.1:3569",
@@ -19,10 +24,16 @@
 			"address": "f8d6e0586b0a20c7",
 			"keys": "bbbf224bf8cc74a5416985a3bfb9f0e8a50930626def2db6709215ba28f408cc"
 		},
-		"testnet": {
+		"testnet-account": {
 			"address": "${FLOW_ADDRESS}",
 			"keys": "${FLOW_PRIVATE_KEY}"
 		}
 	},
-	"deployments": {}
+	"deployments": {
+		"testnet": {
+			"testnet-account": [
+				"CryptoRecord"
+			]
+		}
+	}
 }
